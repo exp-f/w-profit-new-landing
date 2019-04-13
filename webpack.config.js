@@ -9,12 +9,14 @@ const babel = require('./webpack/babel');
 const extractCSS = require('./webpack/css.extract');
 const files = require('./webpack/files');
 const progressBar = require('progress-bar-webpack-plugin');
+const LiveReloadPlugin = require('webpack-livereload-plugin');
+
 const PATHS = {
-  source: path.join(__dirname, 'source'),
-  build: path.join(__dirname, 'dist')
+  source: path.join(__dirname, 'src'),
+  build: path.join(__dirname, 'pages')
 };
 
-const generateHtmlPlugins = (templateDir) =>{
+const generateHtmlPlugins = (templateDir) => {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
 
   return templateFiles.map(item => {
@@ -31,7 +33,6 @@ const generateHtmlPlugins = (templateDir) =>{
 };
 
 const htmlPlugins = generateHtmlPlugins(`${PATHS.source}/pages`);
-
 
 
 const common = merge([

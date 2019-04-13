@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --color --env production --hot",
+    "start": "webpack-dev-server --color --env development --hot",
     "build": "webpack --env production",
     "watch": "webpack -w --env production"
   },
@@ -32,5 +32,8 @@
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2",
     "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "webpack-livereload-plugin": "^2.2.0"
   }
 }
