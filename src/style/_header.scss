@@ -5,7 +5,11 @@
   width: 100%;
   background: #0c217d;
   color: #ffffff;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   &__item {
     display: flex;
     align-items: center;

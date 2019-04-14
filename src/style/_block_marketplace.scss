@@ -1,5 +1,8 @@
 .block_2 {
   margin-bottom: 170px;
+  @media (max-width: $tablet-bp) {
+    margin-bottom: 105px;
+  }
   .wrapper {
     margin: 0 auto;
   }
@@ -23,6 +26,10 @@
     justify-content: stretch;
     align-items: center;
     overflow: hidden;
+    @media (max-width: $tablet-bp) {
+      flex-direction: column-reverse;
+      padding: 60px 10px 35px;
+    }
     &__text {
       display: flex;
       flex-direction: column;
@@ -45,5 +52,9 @@
   }
   &__img {
     flex: 0 0 60%;
+    @media (max-width: $tablet-bp) {
+      max-width: 80%;
+      margin-bottom: 10px;
+    }
   }
 }

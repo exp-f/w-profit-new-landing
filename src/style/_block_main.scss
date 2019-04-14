@@ -3,8 +3,12 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 270px;
+  @media (max-width: $tablet-bp) {
+    padding-top: 130px;
+    padding-bottom: 170px;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -12,16 +16,16 @@
     justify-content: center;
     background: #ffffff;
     border-radius: 55px;
-    @media (max-width: $tablet-bp) {
-      padding: 75px 15px 0;
-    }
     @media (max-width: $mobile-bp) {
-      padding: 60px 15px 0;
+
     }
   }
 
   &__logo {
     margin-bottom: 110px;
+    @media (max-width: $tablet-bp) {
+      margin-bottom: 90px;
+    }
     @media (max-width: $mobile-bp) {
       max-width: 220px;
       height: auto;
@@ -36,6 +40,9 @@
     justify-content: center;
     background: $white;
     padding: 50px 0 50px;
+    @media (max-width: $tablet-bp) {
+      justify-content: space-between;
+    }
     @media (max-width: $mobile-bp) {
       flex-direction: column;
       background-color: transparent;
@@ -58,8 +65,8 @@
       font-size: 18px;
     }
     @media (max-width: $tablet-bp) {
-      padding: 5px 15px;
-      flex: 0 0 calc(100% / 3);
+      padding: 0;
+      flex: 0 0 calc(100% / 3 - 20px);
     }
     @media (max-width: $mobile-bp) {
       margin-bottom: 50px;
@@ -92,9 +99,10 @@
         width: 1px;
         background: $block-1-border;
         @media (max-width: $tablet-bp) {
-          height: 55%;
+          display: none;
         }
         @media (max-width: $mobile-bp) {
+          display: block;
           height: 1px;
           width: 30px;
           left: 0;
