@@ -6,6 +6,9 @@
   @media (max-width: $tablet-bp) {
     margin-bottom: 80px;
   }
+  @media (max-width: $mobile-bp) {
+    display: none;
+  }
   &__title {
     @media (max-width: $tablet-bp) {
       margin-bottom: 40px;

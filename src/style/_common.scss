@@ -15,11 +15,19 @@
   &--head {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $tablet-bp) {
+      justify-content: center;
+    }
   }
   @media (max-width: $tablet-bp) {
     padding-left: 5%;
     padding-right: 5%;
   }
+}
+
+nobr {
+  font-size: inherit;
+  color: inherit;
 }
 
 .title {

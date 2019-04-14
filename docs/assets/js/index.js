@@ -81,6 +81,11 @@
 
 __webpack_require__(0);
 
+document.querySelector('.header__menu_button').addEventListener('click', function (e) {
+  var header = document.querySelector('.header');
+  header.classList.toggle('open');
+});
+
 /***/ })
 /******/ ]);
 //# sourceMappingURL=index.js.map

@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>W-Profit Langing - </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/index.js"></script>
   </head>
   <body>
 <header class="header">
-  <button class="header__menu_button"><img src="images/m_menu.svg" alt="Меню"></button>
+  <button class="header__menu_button"><img class="opener" src="images/m_menu.svg" alt="Menu"><img class="closer" src="images/cancel.svg" alt="Close" width="25" height="25"></button>
   <div class="wrapper wrapper--head">
     <div class="header__item header__item--left">
       <button class="header__sign_up">Sign Up</button><a class="header__link active" href="/about">About</a><a class="header__link" href="/platform">Platform</a><a class="header__link" href="/partners">Partners</a>
@@ -22,7 +22,9 @@
     </section>
     <section class="block block_1">
       <div class="wrapper"><img class="block_1__logo" src="images/w_profit_logo.png" width="249" height="67">
-        <h1 class="title block_1__title">We are W-profit —<br>performance media buying agency</h1>
+        <h1 class="title block_1__title">We are W-profit —<br>performance
+          <nobr>media buying agency</nobr>
+        </h1>
         <div class="block_1__items">
           <div class="block_1__item">
             <p>In-house media buying experts</p>
@@ -32,6 +34,24 @@
           </div>
           <div class="block_1__item">
             <p>Steady flow of ad creatives</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block block_2">
+      <div class="wrapper">
+        <h1 class="title block_2__title">Playable Ads Marketplace</h1>
+        <p class="block_2__text">Gathering playable ads developers, advertisers and<br>our media buying expertise to double you profit</p>
+        <div class="block_2__items">
+          <div class="block_2__item">
+            <div class="block_2__item__text">
+              <p>I'm a developer</p><a class="block_2__item__button" href="#">Learn more</a>
+            </div><img class="block_2__img" src="images/developer.png" alt="I'm a developer">
+          </div>
+          <div class="block_2__item">
+            <div class="block_2__item__text">
+              <p>I'm an advertiser</p><a class="block_2__item__button" href="#">Learn more</a>
+            </div><img class="block_2__img" src="images/advertiser.png" alt="I'm an advertiser">
           </div>
         </div>
       </div>
@@ -61,5 +81,79 @@
         </div>
       </div>
     </section>
+    <section class="backgrounds backgrounds--end">
+      <div class="background__wrapper"><img class="background background_2" src="images/block-3-bg.svg"></div>
+    </section>
+    <section class="block block_4">
+      <div class="wrapper">
+        <h1 class="title block_4__title">Pricing models</h1>
+        <div class="block_4__items">
+          <div class="block_4__item">
+            <div class="block_4__caption">CPI</div>
+            <div class="block_4__text">cost per install</div>
+          </div>
+          <div class="block_4__item">
+            <div class="block_4__caption">CPA</div>
+            <div class="block_4__text">cost per action</div>
+          </div>
+          <div class="block_4__item">
+            <div class="block_4__caption">Service Fee</div>
+          </div>
+          <div class="block_4__item">
+            <div class="block_4__caption">Revenue share</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block block_5">
+      <div class="wrapper">
+        <h1 class="title block_5__title">Verticals</h1>
+        <div class="block_5__items">
+          <div class="block_5__item"><img class="block_5__logo" src="images/2.png">
+            <p class="block_5__caption">E-commerce</p>
+          </div>
+          <div class="block_5__item"><img class="block_5__logo" src="images/4.png">
+            <p class="block_5__caption">Games</p>
+          </div>
+          <div class="block_5__item"><img class="block_5__logo" src="images/1.png">
+            <p class="block_5__caption">Utilities</p>
+          </div>
+          <div class="block_5__item"><img class="block_5__logo" src="images/3.png">
+            <p class="block_5__caption">Travel</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer class="footer">
+  <div class="wrapper">
+    <div class="title footer__title">Contacts</div>
+    <div class="footer__contacts footer__contacts--desktop">
+      <div class="footer__column">
+        <div class="footer__row"><a class="footer__soc_link" href="https://www.linkedin.com/company/w-profit" target="_blank"><img src="images/in.svg" width="28" height="28"></a><a class="footer__soc_link" href="https://www.facebook.com/W-profit-443121196113356/" target="_blank"><img src="images/fb.svg" width="28" height="28"></a></div>
+        <div class="footer__row"><img class="footer__logo" src="images/logo.png"></div>
+      </div>
+      <div class="footer__column">
+        <div><a class="footer__link" href="mailto:hello@w-profit.com">hello@w-profit.com</a><br><a class="footer__link" href="https://cyprus.hh.ru/employer/3406479" target="_blank">Career</a><br><a class="footer__link" href="https://cyprus.hh.ru/employer/3406479" target="_blank">Privacy Policy</a></div>
+      </div>
+      <div class="footer__column">
+        <p class="footer__address_title">Prevezis 13 Flat/Office 101 Nicosia, 1065 Cyprus</p>
+        <p class="footer__text">W-profit is a mobile ad tech agency. We are dedicated to empowering our partners with sophisticated solutions that make it simple for app developers to connect with target audiences.</p>
+        <p class="footer__text">© 2018 W-profit LTD – All rights reserved.</p>
+      </div>
+    </div>
+    <div class="footer__contacts footer__contacts--mobile">
+      <div class="footer__row">
+        <div><a class="footer__link" href="mailto:hello@w-profit.com">hello@w-profit.com</a><br><a class="footer__link" href="https://cyprus.hh.ru/employer/3406479" target="_blank">Career</a><br><a class="footer__link" href="https://cyprus.hh.ru/employer/3406479" target="_blank">Privacy Policy</a></div>
+        <div><a class="footer__soc_link" href="https://www.linkedin.com/company/w-profit" target="_blank"><img src="images/in.svg" width="28" height="28"></a><a class="footer__soc_link" href="https://www.facebook.com/W-profit-443121196113356/" target="_blank"><img src="images/fb.svg" width="28" height="28"></a></div>
+      </div>
+      <div class="footer__column">
+        <p class="footer__address_title">Prevezis 13 Flat/Office 101 Nicosia, 1065 Cyprus</p>
+        <p class="footer__text">W-profit is a mobile ad tech agency. We are dedicated to empowering our partners with sophisticated solutions that make it simple for app developers to connect with target audiences.</p>
+        <p class="footer__text">© 2018 W-profit LTD – All rights reserved.</p>
+      </div>
+      <div class="footer__row"><img class="footer__logo" src="images/logo.png"></div>
+    </div>
+  </div>
+</footer>
   </body>
 </html>

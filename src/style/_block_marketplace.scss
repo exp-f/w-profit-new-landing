@@ -3,20 +3,32 @@
   @media (max-width: $tablet-bp) {
     margin-bottom: 105px;
   }
+  @media (max-width: $mobile-bp) {
+    margin-bottom: 60px;
+  }
   .wrapper {
     margin: 0 auto;
   }
   &__title {
     margin-bottom: 10px;
+    @media (max-width: $mobile-bp) {
+      display: none;
+    }
   }
   &__text {
     text-align: center;
     line-height: 1.5;
     margin-bottom: 50px;
+    @media (max-width: $mobile-bp) {
+      display: none;
+    }
   }
   &__items {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $mobile-bp) {
+      flex-direction: column;
+    }
   }
   &__item {
     background: #ffffff;
@@ -29,6 +41,9 @@
     @media (max-width: $tablet-bp) {
       flex-direction: column-reverse;
       padding: 60px 10px 35px;
+    }
+    @media (max-width: $mobile-bp) {
+      margin-bottom: 15px;
     }
     &__text {
       display: flex;

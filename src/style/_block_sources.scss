@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   @media (max-width: $mobile-bp) {
-    margin-top: 70px;
-    padding-top: 100px;
+
   }
   &__title {
     margin-bottom: 70px;
@@ -16,6 +15,9 @@
     max-width: 70%;
     @media (max-width: $tablet-bp) {
       max-width: 100%;
+    }
+    @media (max-width: $mobile-bp) {
+      margin-bottom: 0;
     }
   }
   &__item {

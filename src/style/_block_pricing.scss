@@ -6,10 +6,6 @@
   }
   .wrapper {
     margin: 0 auto;
-    @media (max-width: $mobile-bp) {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
   &__title {
     margin-bottom: 60px;

@@ -9,6 +9,10 @@
     padding-top: 130px;
     padding-bottom: 170px;
   }
+  @media (max-width: $mobile-bp) {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -20,7 +24,6 @@
 
     }
   }
-
   &__logo {
     margin-bottom: 110px;
     @media (max-width: $tablet-bp) {
@@ -29,11 +32,8 @@
     @media (max-width: $mobile-bp) {
       max-width: 220px;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
-  }
-  &__title {
-    margin-bottom: 100px;
   }
   &__items {
     display: flex;
@@ -49,11 +49,12 @@
     }
   }
   &__title {
+    margin-bottom: 100px;
     @media (max-width: $tablet-bp) {
       font-size: 1.72rem;
     }
     @media (max-width: $mobile-bp) {
-      font-size: 1.27rem;
+      margin-bottom: 60px;
     }
   }
   &__item {
@@ -70,6 +71,7 @@
     }
     @media (max-width: $mobile-bp) {
       margin-bottom: 50px;
+      flex: 0 0 auto;
     }
     span {
       position: absolute;
