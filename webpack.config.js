@@ -13,7 +13,7 @@ const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const PATHS = {
   source: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'pages')
+  build: path.join(__dirname, 'docs')
 };
 
 const generateHtmlPlugins = (templateDir) => {
