@@ -1,1 +1,45 @@
 extends ../layout/base.pug
+block content
+    section.backgrounds.backgrounds--start
+        .background__wrapper
+            img(src=require('../images/block-1-bg.png')).background--desk.background_1
+            img(src=require('../images/block-1-bg-t.png')).background--tablet.background_1
+            img(src=require('../images/block-1-bg-m.png')).background--mobile.background_1
+    section.block.block_1
+        .wrapper
+            img(src=require('../images/w_profit_logo.png') width=249 height=67).block_1__logo
+            h1.title.block_1__title We are W-profit —
+                br
+                | performance media buying agency
+            .block_1__items
+                .block_1__item
+                    p In-house media buying experts
+                .block_1__item
+                    p Cutting-edge ad formats
+                    span Playable ads, 360° videos, etc.
+                .block_1__item
+                    p Steady flow of ad creatives
+    section.block.block_3
+        .wrapper
+            h1.title.block_3__title Traffic sources
+            .block_3__items
+                .block_3__item
+                    img(src=require('../images/logo_5.svg') width=55 height=55).block_3__icon
+                    p.block_3__caption Facebook
+                .block_3__item
+                    img(src=require('../images/logo_4.svg') width=55 height=55).block_3__icon
+                    p.block_3__caption Instagram
+                .block_3__item
+                    img(src=require('../images/logo_1.svg') width=55 height=55).block_3__icon
+                    p.block_3__caption Facebook
+                        br
+                        | Audience network
+                .block_3__item
+                    img(src=require('../images/logo_6.svg') width=55 height=55).block_3__icon
+                    p.block_3__caption Snapchat
+                .block_3__item
+                    img(src=require('../images/logo_2.svg') width=55 height=55).block_3__icon
+                    p.block_3__caption Google
+                .block_3__item
+                    img(src=require('../images/logo_3.svg') width=55 height=55).block_3__icon
+                    p.block_3__caption Applovin

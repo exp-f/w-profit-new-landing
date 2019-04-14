@@ -1,0 +1,42 @@
+.backgrounds {
+  .background {
+    &__wrapper {
+      position: relative;
+    }
+    &--desk {
+      @media (max-width: $tablet-bp) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+      @media (max-width: $tablet-bp) {
+        display: block;
+      }
+      @media (max-width: $mobile-bp) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      @media (max-width: $mobile-bp) {
+        display: block;
+      }
+    }
+
+    &_1 {
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      @media (max-width: $mobile-bp) {
+        top: 92%;
+        width: 100%;
+      }
+    }
+  }
+}
