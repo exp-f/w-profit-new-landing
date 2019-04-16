@@ -86,6 +86,21 @@ document.querySelector('.header__menu_button').addEventListener('click', functio
   header.classList.toggle('open');
 });
 
+document.querySelectorAll('.dev_3__item__title').forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    var container = e.currentTarget.parentElement;
+    var content = container.querySelector('.dev_3__showmore_content');
+    var h = void 0;
+    container.classList.toggle('open');
+    if (container.classList.contains('open')) {
+      h = content.offsetHeight;
+      content.parentElement.style.maxHeight = h + 'px';
+    } else {
+      content.parentElement.style.maxHeight = '0';
+    }
+  });
+});
+
 /***/ })
 /******/ ]);
 //# sourceMappingURL=index.js.map

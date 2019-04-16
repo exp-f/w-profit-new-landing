@@ -1,0 +1,104 @@
+.dev {
+  &_1 {
+    background: url("../images/devt-bg.jpg") center no-repeat;
+    background-size: cover;
+    padding: 200px 0 150px;
+    @media (max-width: $tablet-bp) {
+      padding: 150px 0 100px;
+    }
+    @media (max-width: $mobile-bp) {
+      padding: 100px 0 70px;
+    }
+    & > * {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      @extend .about_1__title;
+    }
+    &__text {
+      @extend .about_1__text;
+      max-width: 600px;
+      text-align: center;
+    }
+  }
+  &_2 {
+    @extend .about_2;
+    &__title {
+      @extend .about_2__title
+    }
+    &__items {
+      @extend .about_2__items;
+    }
+    &__item {
+      @extend .about_2__item;
+      &__title {
+        @extend .about_2__item__title;
+      }
+    }
+
+    &__text {
+      @extend .about_2__text;
+    }
+    &__img {
+      @extend .about_2__img;
+    }
+  }
+  &_3 {
+    padding-top: 110px;
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+    &__item {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        font-weight: 300;
+        font-size: 34px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 25px;
+        cursor: pointer;
+        @media (max-width: $mobile-bp) {
+          font-size: 24px;
+        }
+        &:before {
+          content: '';
+          background: url(../images/dropdown.svg) no-repeat center;
+          display: block;
+          width: 12px;
+          height: 7px;
+          position: absolute;
+          top: 50%;
+          right: -20px;
+          transition: $transition-common;
+          .open & {
+            transform: rotateZ(180deg);
+          }
+        }
+      }
+    }
+    &__showmore {
+      &_wrapper {
+        overflow: hidden;
+        max-height: 0;
+        transition: $transition-common;
+      }
+      &_content {
+        line-height: 1.5;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
