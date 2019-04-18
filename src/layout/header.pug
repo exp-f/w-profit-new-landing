@@ -1,3 +1,5 @@
+block config
+    include ./config.pug
 header.header
     button.header__menu_button
         img.opener(src=require("../images/m_menu.svg") alt="Menu")
@@ -5,9 +7,9 @@ header.header
     .wrapper.wrapper--head
         .header__item.header__item--left
             button.header__sign_up Sign Up
-            a.header__link.active(href="/about") About
-            a.header__link(href="/platform") Platform
-            a.header__link(href="/partners") Partners
+            a(href="/" class=page === 'about' ? 'header__link active': 'header__link') About
+            a(href="about.html" class=page === 'platform' ? 'header__link active': 'header__link') Platform
+            a(href="developers.html" class=page === 'partners' ? 'header__link active': 'header__link') Partners
         .header__item.header__item--right
             a.header__logo(href="/")
                 img(src=require("../images/logo.png") alt="W-Profit")
