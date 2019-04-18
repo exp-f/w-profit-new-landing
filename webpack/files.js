@@ -19,6 +19,13 @@ module.exports = function () {
           },
         },
         {
+          test: /\.(mp4)$/i,
+          loader: 'file-loader',
+          options: {
+            name: 'media/[name].[ext]'
+          },
+        },
+        {
           test: /\.json$/i,
           loader: 'file-loader',
           options: {
