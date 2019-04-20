@@ -12,11 +12,55 @@
       <button class="header__menu_button"><img class="opener" src="images/m_menu.svg" alt="Menu"><img class="closer" src="images/cancel.svg" alt="Close" width="25" height="25"></button>
       <div class="wrapper wrapper--head">
         <div class="header__item header__item--left">
-          <button class="header__sign_up">Sign Up</button><a class="header__link active" href="/">About</a><a class="header__link" href="about.html">Platform</a><a class="header__link" href="developers.html">Partners</a>
+          <button class="header__sign_up" data-target="sign-up">Sign Up</button><a class="header__link active" href="/">About</a><a class="header__link" href="about.html">Platform</a><a class="header__link" href="developers.html">Partners</a>
         </div>
         <div class="header__item header__item--right"><a class="header__logo" href="/"><img src="images/logo.png" alt="W-Profit"></a></div>
       </div>
     </header>
+<div class="popup" id="sign-up">
+  <div class="wrapper wrapper--popup">
+    <div class="popup__close"></div>
+    <form class="popup__content" action="#">
+      <h1 class="title popup__title">Sign up now</h1>
+      <div class="popup__form">
+        <div class="popup__row">
+          <div class="popup__input_wrapper">
+            <input name="first_name" required value="">
+            <div class="popup__input_label">First Name</div>
+          </div>
+          <div class="popup__input_wrapper">
+            <input name="last_name" required value="">
+            <div class="popup__input_label">Last Name</div>
+          </div>
+        </div>
+        <div class="popup__row">
+          <div class="popup__input_wrapper">
+            <input name="email" required value="">
+            <div class="popup__input_label">Email</div>
+          </div>
+          <div class="popup__input_wrapper">
+            <input name="years" required value="">
+            <div class="popup__input_label">Experience years</div>
+          </div>
+        </div>
+        <div class="popup__row">
+          <div class="popup__input_wrapper">
+            <input name="company_name" required value="">
+            <div class="popup__input_label">Company Name</div>
+          </div>
+          <div class="popup__input_wrapper">
+            <input name="portfolio_link" required value="">
+            <div class="popup__input_label">Portfolio link</div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__buttons">
+        <input class="btn btn--red btn--large" type="submit" value="Sign up">
+      </div>
+      <p class="popup__label">Please make sure to fill out all these fields.</p>
+    </form>
+  </div>
+</div>
     <section class="backgrounds backgrounds--start">
       <div class="background__wrapper"><img class="background--desk background_1" src="images/block-1-bg.png"><img class="background--tablet background_1" src="images/block-1-bg-t.png"><img class="background--mobile background_1" src="images/block-1-bg-m.png"></div>
     </section>
@@ -46,12 +90,12 @@
           <div class="block_2__item">
             <div class="block_2__item__text">
               <p>I'm a developer</p><a class="block_2__item__button" href="#">Learn more</a>
-            </div><img class="block_2__img" src="images/developer.png" alt="I'm a developer">
+            </div><img class="block_2__img" src="images/main_1.svg" alt="I'm a developer">
           </div>
           <div class="block_2__item">
             <div class="block_2__item__text">
               <p>I'm an advertiser</p><a class="block_2__item__button" href="#">Learn more</a>
-            </div><img class="block_2__img" src="images/advertiser.png" alt="I'm an advertiser">
+            </div><img class="block_2__img" src="images/main_2.svg" alt="I'm an advertiser">
           </div>
         </div>
       </div>

@@ -9,21 +9,21 @@ block content
             p.about_1__text W-profit - platform, that unites playable ads developers,
                 br
                 | advertisers and our media buying expertise in one place.
-            button.about_1__btn.btn.btn--red Request a demo
+            button.about_1__btn.btn.btn--red(data-target="request-demo") Request a demo
     .about.about_2
         .wrapper
             h1.title.about_2__title Features
             .about_2__items
                 .about_2__item
-                    img.about_2__img(src=require("../images/features_1.png") alt="Marketplace")
+                    img.about_2__img(src=require("../images/about_1.svg") alt="Marketplace")
                     h2.about_2__item__title Marketplace
                     p.about_2__text The marketplace gathers talented playable ads developers and designers from all over the world, that brings ad content diversity and local expertise for scalable growth of your business. Maximize your performance with the new advertising formats!
                 .about_2__item
-                    img.about_2__img(src=require("../images/features_2.png") alt="Distribution")
+                    img.about_2__img(src=require("../images/about_2.svg") alt="Distribution")
                     h2.about_2__item__title Distribution
                     p.about_2__text With the help of our qualified advertising experts reach 2+ billion people on popular social, entertainment, gaming apps & services like Instagram, Facebook, Google, Snapchat & many more.
                 .about_2__item
-                    img.about_2__img(src=require("../images/features_3.png") alt="Analytics, Transparency & full control")
+                    img.about_2__img(src=require("../images/about_3.svg") alt="Analytics, Transparency & full control")
                     h2.about_2__item__title Analytics, Transparency &&nbsp;full&nbsp;control
                     p.about_2__text Get all the data on creatives performance at one place. Control your budget and get maximum performance using our predictive models.
     .about.about_3
@@ -54,3 +54,4 @@ block content
                             .about_3__texts__item
                                 span CPA (to registrations)
                                 p -300%
+    include ../layout/popup_demo

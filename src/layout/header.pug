@@ -6,10 +6,11 @@ header.header
         img.closer(src=require("../images/cancel.svg") alt="Close" width=25 height=25)
     .wrapper.wrapper--head
         .header__item.header__item--left
-            button.header__sign_up Sign Up
+            button.header__sign_up(data-target="sign-up") Sign Up
             a(href="/" class=page === 'about' ? 'header__link active': 'header__link') About
             a(href="about.html" class=page === 'platform' ? 'header__link active': 'header__link') Platform
             a(href="developers.html" class=page === 'partners' ? 'header__link active': 'header__link') Partners
         .header__item.header__item--right
             a.header__logo(href="/")
                 img(src=require("../images/logo.png") alt="W-Profit")
+include ./popup_sign_up.pug

@@ -13,6 +13,19 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  &--popup {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    @media (max-width: $mobile-bp) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      overflow: auto;
+    }
+  }
   &--head {
     display: flex;
     justify-content: space-between;
@@ -44,8 +57,13 @@ nobr {
   padding: 10px 25px;
   border: none;
   outline: none;
+  cursor: pointer;
   &--red {
     background: #ff0056;
     color: #ffffff;
+  }
+  &--large {
+    padding: 15px 40px;
+    border-radius: 25px;
   }
 }

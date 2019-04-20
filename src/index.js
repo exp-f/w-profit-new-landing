@@ -19,3 +19,28 @@ document.querySelectorAll('.dev_3__item__title').forEach(item => {
     }
   })
 });
+
+document.querySelectorAll('.popup input, .popup textarea').forEach(item => {
+  item.addEventListener('input', e => {
+    if (e.target.value !== '') {
+      e.target.parentElement.classList.add('not-empty');
+    } else {
+      e.target.parentElement.classList.remove('not-empty');
+    }
+  })
+});
+
+document.querySelectorAll('[data-target]').forEach(item => {
+  item.addEventListener('click', e => {
+    const target = e.target.getAttribute('data-target');
+    const popup = document.getElementById(target).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+document.querySelectorAll('.popup__close').forEach(item =>{
+  item.addEventListener('click', e=>{
+    e.target.parentElement.parentElement.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});

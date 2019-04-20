@@ -101,6 +101,31 @@ document.querySelectorAll('.dev_3__item__title').forEach(function (item) {
   });
 });
 
+document.querySelectorAll('.popup input, .popup textarea').forEach(function (item) {
+  item.addEventListener('input', function (e) {
+    if (e.target.value !== '') {
+      e.target.parentElement.classList.add('not-empty');
+    } else {
+      e.target.parentElement.classList.remove('not-empty');
+    }
+  });
+});
+
+document.querySelectorAll('[data-target]').forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    var target = e.target.getAttribute('data-target');
+    var popup = document.getElementById(target).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+document.querySelectorAll('.popup__close').forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    e.target.parentElement.parentElement.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
 /***/ })
 /******/ ]);
 //# sourceMappingURL=index.js.map

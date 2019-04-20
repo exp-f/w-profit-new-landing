@@ -60,11 +60,11 @@
       height: 1px;
       width: 100%;
       position: absolute;
-      bottom: -20px;
+      bottom: -10px;
       transition: $transition-common;
     }
     &:hover:before {
-        transform: translateY(-10px);
+        transform: translateY(-5px);
     }
   }
   &__address_title {
