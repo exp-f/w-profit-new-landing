@@ -542,7 +542,8 @@ nobr {
   .block_2__img {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 60%;
-            flex: 0 0 60%; }
+            flex: 0 0 60%;
+    max-width: 60%; }
     @media (max-width: 1024px) {
       .block_2__img {
         max-width: 80%;

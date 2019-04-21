@@ -1,7 +1,7 @@
 module.exports = function () {
   return {
     devServer: {
-      host: '192.168.0.47',
+      host: '',
       port: 3000,
       open: true,
     }

@@ -67,6 +67,7 @@
   }
   &__img {
     flex: 0 0 60%;
+    max-width: 60%;
     @media (max-width: $tablet-bp) {
       max-width: 80%;
       margin-bottom: 10px;
