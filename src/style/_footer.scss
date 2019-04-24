@@ -46,6 +46,19 @@
     &:not(:last-child){
       margin-right: 10px;
     }
+    svg {
+      path {
+        transition: $transition-common;
+      }
+      &:hover {
+        &#inst path {
+          fill: #45a3f3;
+        }
+        &#fb path {
+          fill: #120e63;
+        }
+      }
+    }
   }
   &__link {
     color: $white;

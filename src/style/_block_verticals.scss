@@ -39,6 +39,7 @@
   &__logo {
     flex: 1 1 80px;
     margin-bottom: 30px;
+    max-width: 120px;
     @media (max-width: $tablet-bp) {
       margin-bottom: 25px;
       flex: 0 0 80px;

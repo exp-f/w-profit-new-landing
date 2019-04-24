@@ -9,7 +9,6 @@ const babel = require('./webpack/babel');
 const extractCSS = require('./webpack/css.extract');
 const files = require('./webpack/files');
 const progressBar = require('progress-bar-webpack-plugin');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const PATHS = {
   source: path.join(__dirname, 'src'),

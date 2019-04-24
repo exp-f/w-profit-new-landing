@@ -48,6 +48,11 @@
     cursor: pointer;
     padding: 8px 20px;
     margin-right: 50px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #ffffff;
+      color: #0c217d;
+    }
   }
 
   &__link {
@@ -55,6 +60,7 @@
     text-decoration: none;
     color: #ffffff;
     position: relative;
+    transition: all 0.2s ease-in-out;
 
     &:before {
       content: "";
@@ -72,8 +78,11 @@
       }
     }
 
-    &.active:before, &:hover:before {
+    &.active:before {
       background: #ffffff;
+    }
+    &:hover {
+      color: #9ea6d7;
     }
   }
 

@@ -66,10 +66,15 @@ nobr {
   padding: 10px 25px;
   border: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
   .btn--red {
     background: #ff0056;
     color: #ffffff; }
+    .btn--red:hover {
+      background: #c70043; }
   .btn--large {
     padding: 15px 40px;
     border-radius: 25px; }
@@ -135,12 +140,21 @@ nobr {
     border-radius: 15px;
     cursor: pointer;
     padding: 8px 20px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .header__sign_up:hover {
+      background: #ffffff;
+      color: #0c217d; }
   .header__link {
     margin-right: 50px;
     text-decoration: none;
     color: #ffffff;
-    position: relative; }
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
     .header__link:before {
       content: "";
       display: block;
@@ -157,8 +171,10 @@ nobr {
           left: 20px;
           right: 20px;
           bottom: 0; } }
-    .header__link.active:before, .header__link:hover:before {
+    .header__link.active:before {
       background: #ffffff; }
+    .header__link:hover {
+      color: #9ea6d7; }
   .header__menu_button {
     background-color: transparent;
     border: none;
@@ -227,6 +243,14 @@ nobr {
               justify-content: space-between; } }
   .footer__soc_link:not(:last-child) {
     margin-right: 10px; }
+  .footer__soc_link svg path {
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .footer__soc_link svg:hover#inst path {
+    fill: #45a3f3; }
+  .footer__soc_link svg:hover#fb path {
+    fill: #120e63; }
   .footer__link {
     color: #ffffff;
     text-decoration: none;
@@ -737,7 +761,8 @@ nobr {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 80px;
             flex: 1 1 80px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    max-width: 120px; }
     @media (max-width: 1024px) {
       .block_5__logo {
         margin-bottom: 25px;

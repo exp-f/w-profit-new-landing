@@ -58,9 +58,13 @@ nobr {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: $transition-common;
   &--red {
     background: #ff0056;
     color: #ffffff;
+    &:hover {
+      background: #c70043;
+    }
   }
   &--large {
     padding: 15px 40px;
