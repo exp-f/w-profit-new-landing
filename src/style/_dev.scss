@@ -71,11 +71,12 @@
         margin-bottom: 25px;
         cursor: pointer;
         @media (max-width: $mobile-bp) {
-          font-size: 24px;
+          font-size: 18px;
         }
         &:before {
           content: '';
           background: url(../images/dropdown.svg) no-repeat center;
+          background-size: contain;
           display: block;
           width: 12px;
           height: 7px;
@@ -83,6 +84,10 @@
           top: 50%;
           right: -20px;
           transition: $transition-common;
+          @media (max-width: $mobile-bp) {
+            width: 8px;
+            height: 4px;
+          }
           .open & {
             transform: rotateZ(180deg);
           }

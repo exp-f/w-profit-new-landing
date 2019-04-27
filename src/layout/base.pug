@@ -2,9 +2,15 @@ block config
     include config.pug
 html
     head
-        title W-Profit Langing - #{title}
+        title W-Profit Landing - #{title}
         meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
         meta(charset='utf-8')
+        meta(property="og:title" content="W-profit media buying agency")
+        meta(property="og:description" content="W-profit is a media buying agency, that offers a wide range of traffic sources, including social, in-app and much more.")
+        meta(property="og:image" content="http://w-profit.com/logo.png")
+        link(rel="icon" type="image/x-icon" href=require("../images/favicon.ico"))
+        link(rel="icon" type="image/png" href=require("../images/favicon-32x32.png") sizes="32x32")
+        link(rel="icon" type="image/png" href=require("../images/favicon-16x16.png") sizes="16x16")
         link(rel='stylesheet' href='assets/css/style.css')
         script(defer src='assets/js/index.js')
     body

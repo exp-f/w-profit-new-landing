@@ -47,8 +47,12 @@
     border-radius: 20px;
     cursor: pointer;
     padding: 8px 20px;
-    margin-right: 50px;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-right: 20px;
+    &:nth-child(2) {
+      margin-right: 50px;
+    }
     &:hover {
       background: #ffffff;
       color: #0c217d;

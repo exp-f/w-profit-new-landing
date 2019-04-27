@@ -109,6 +109,9 @@
         border-radius: 30px;
         padding: 40px 8px;
         filter: drop-shadow(0px 5px 18px rgba(143, 143, 143, 0.25));
+        @media (max-width: $mobile-bp) {
+          margin-bottom: 40px;
+        }
       }
 
       &:nth-child(2n + 1) {

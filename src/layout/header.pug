@@ -6,7 +6,8 @@ header.header
         img.closer(src=require("../images/cancel.svg") alt="Close" width=25 height=25)
     .wrapper.wrapper--head
         .header__item.header__item--left
-            button.header__sign_up(data-target="sign-up") Sign Up
+            a.header__sign_up(href='http://platform.w-profit.com/register') Sign Up
+            a.header__sign_up(href='http://platform.w-profit.com/login') Sign In
             a(href="/" class=page === 'about' ? 'header__link active': 'header__link') About
             a(href="about.html" class=page === 'platform' ? 'header__link active': 'header__link') Platform
             a(href="developers.html" class=page === 'partners' ? 'header__link active': 'header__link') Partners
