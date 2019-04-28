@@ -774,7 +774,7 @@ nobr {
                 flex: 0 0 80px; } }
 
 .dev_1 {
-  background: url(/docs/images/devt-bg.jpg) center no-repeat;
+  background: url(/images/devt-bg.jpg) center no-repeat;
   background-size: cover;
   padding: 200px 0 150px; }
   @media (max-width: 1024px) {
@@ -845,7 +845,7 @@ nobr {
           font-size: 18px; } }
       .dev_3__item__title:before {
         content: '';
-        background: url(/docs/images/dropdown.svg) no-repeat center;
+        background: url(/images/dropdown.svg) no-repeat center;
         background-size: contain;
         display: block;
         width: 12px;
@@ -875,7 +875,7 @@ nobr {
     padding-bottom: 40px; }
 
 .about_1 {
-  background: url(/docs/images/about-bg.jpg) no-repeat center;
+  background: url(/images/about-bg.jpg) no-repeat center;
   background-size: cover;
   padding: 200px 0 150px; }
   @media (max-width: 1024px) {
@@ -1088,7 +1088,7 @@ nobr {
     position: absolute;
     top: 35px;
     right: 10px;
-    background: url(/docs/images/cancel.svg);
+    background: url(/images/cancel.svg);
     background-size: contain;
     width: 22px;
     height: 22px;

@@ -9,7 +9,7 @@ module.exports = function (paths) {
           test: /(\.css|\.scss)$/,
           include: paths,
           loader: ExtractTextPlugin.extract({
-            publicPath: '/docs/',
+            publicPath: '/',
             fallback: 'style-loader',
             use: [
               {
