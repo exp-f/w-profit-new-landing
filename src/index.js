@@ -38,9 +38,14 @@ document.querySelectorAll('[data-target]').forEach(item => {
   });
 });
 
-document.querySelectorAll('.popup__close').forEach(item =>{
-  item.addEventListener('click', e=>{
+document.querySelectorAll('.popup__close').forEach(item => {
+  item.addEventListener('click', e => {
     e.target.parentElement.parentElement.classList.remove('open');
     document.body.style.overflow = '';
   });
+});
+
+document.querySelector('.cookies__close').addEventListener('click', (e) => {
+  e.target.parentNode.parentNode.classList.add('closed');
+  localStorage.setItem('seencookies', '1');
 });

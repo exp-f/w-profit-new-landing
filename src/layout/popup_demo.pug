@@ -29,6 +29,12 @@
                     .popup__textarea_wrapper
                         textarea(name="comment" required value="")
                         .popup__input_label What are your current pain points and goals in Facebook?
+            .popup__checkboxs
+                label.popup__checkbox
+                    input(name="agreed" type='checkbox' required)
+                    i
+                    p I accept the
+                        a(href='#') Terms of Service
             .popup__buttons
                 input(type="submit" value="Request a demo").btn.btn--red.btn--large
             p.popup__label Please make sure to fill out all these fields.

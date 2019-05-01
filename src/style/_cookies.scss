@@ -1,0 +1,49 @@
+.cookies {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #3d2bb4;
+  color: #ffffff;
+  padding: 18px 0;
+  font-size: 14px;
+  transition: $transition-common;
+  &.closed {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__close {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/cancel.svg) no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: $transition-common;
+    @media (max-width: $mobile-bp) {
+      width: 35px;
+      height: 35px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  p {
+    font-size: 14px;
+    @media (max-width: $mobile-bp) {
+      margin-right: 10px;
+    }
+    a {
+      color: #4298ff;
+      text-decoration: none;
+      transition: $transition-common;
+      font-size: 14px;
+      &:hover {
+        color: #9ea6d7;
+      }
+    }
+  }
+}

@@ -21,6 +21,16 @@
         <div class="header__item header__item--right"><a class="header__logo" href="/"><img src="images/w_logo_white.svg" width="117" height="33" alt="W-Profit"></a></div>
       </div>
     </header>
+    <div class="cookies">
+      <div class="wrapper wrapper--cookies">
+        <p>This site uses cookies to provide you with a great user experience. By using W-Profit, you accept our<a href="#"> use of cookies</a></p>
+        <div class="cookies__close"></div>
+      </div>
+    </div>
+    <script>if (localStorage.getItem('seencookies')) {
+  document.querySelector('.cookies').style.display = 'none';
+}
+    </script>
 <div class="popup" id="sign-up">
   <div class="wrapper wrapper--popup">
     <div class="popup__close"></div>
@@ -168,6 +178,12 @@
             <div class="popup__input_label">What are your current pain points and goals in Facebook?</div>
           </div>
         </div>
+      </div>
+      <div class="popup__checkboxs">
+        <label class="popup__checkbox">
+          <input name="agreed" type="checkbox" required><i></i>
+          <p>I accept the<a href="#">Terms of Service</a></p>
+        </label>
       </div>
       <div class="popup__buttons">
         <input class="btn btn--red btn--large" type="submit" value="Request a demo">

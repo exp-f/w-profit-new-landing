@@ -14,4 +14,11 @@ header.header
         .header__item.header__item--right
             a.header__logo(href="/")
                 img(src=require("../images/w_logo_white.svg") width=117 height=33 alt="W-Profit")
+.cookies
+    .wrapper.wrapper--cookies
+        p This site uses cookies to provide you with a great user experience. By using W-Profit, you accept our
+            a(href='#')  use of cookies
+        .cookies__close
+script
+    include ../hide-cookies.js
 include ./popup_sign_up.pug

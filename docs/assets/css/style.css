@@ -45,6 +45,14 @@
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+  .wrapper--cookies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 990px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   @media (max-width: 1024px) {
     .wrapper {
       padding-left: 5%;
@@ -1200,5 +1208,100 @@ nobr {
   .popup__label {
     text-align: center;
     color: #ffffff; }
+  .popup__checkboxs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px; }
+  .popup__checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
+    .popup__checkbox input {
+      display: none; }
+      .popup__checkbox input + i {
+        width: 13px;
+        height: 13px;
+        background: #ffffff url(/images/ok.svg) center no-repeat;
+        display: inline-block;
+        border: 2px solid #ffffff;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        margin-right: 20px; }
+        .popup__checkbox input + i:hover {
+          border-color: #0c217d; }
+      .popup__checkbox input:checked + i {
+        background-color: #0c217d;
+        border-color: #0c217d; }
+    .popup__checkbox p {
+      font-size: 14px;
+      color: #ffffff; }
+      .popup__checkbox p a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #ffffff;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        .popup__checkbox p a:hover {
+          color: #9ea6d7; }
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #3d2bb4;
+  color: #ffffff;
+  padding: 18px 0;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .cookies.closed {
+    opacity: 0;
+    pointer-events: none; }
+  .cookies__close {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(/images/cancel.svg) no-repeat center;
+    background-size: contain;
+    opacity: 0.5;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    @media (max-width: 480px) {
+      .cookies__close {
+        width: 35px;
+        height: 35px; } }
+    .cookies__close:hover {
+      opacity: 1; }
+  .cookies p {
+    font-size: 14px; }
+    @media (max-width: 480px) {
+      .cookies p {
+        margin-right: 10px; } }
+    .cookies p a {
+      color: #4298ff;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      font-size: 14px; }
+      .cookies p a:hover {
+        color: #9ea6d7; }
 
 /*# sourceMappingURL=style.css.map*/

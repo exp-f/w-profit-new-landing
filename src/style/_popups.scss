@@ -124,4 +124,47 @@
     text-align: center;
     color: #ffffff;
   }
+  &__checkboxs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    input {
+      display: none;
+      & + i {
+        width: 13px;
+        height: 13px;
+        background: #ffffff url("../images/ok.svg") center no-repeat;
+        display: inline-block;
+        border: 2px solid #ffffff;
+        transition: $transition-common;
+        cursor: pointer;
+        margin-right: 20px;
+        &:hover {
+          border-color: #0c217d;
+        }
+      }
+      &:checked + i {
+        background-color: #0c217d;
+        border-color: #0c217d;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: #ffffff;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: $transition-common;
+        &:hover {
+          color: #9ea6d7;
+        }
+      }
+    }
+  }
 }
