@@ -47,5 +47,5 @@ document.querySelectorAll('.popup__close').forEach(item => {
 
 document.querySelector('.cookies__close').addEventListener('click', (e) => {
   e.target.parentNode.parentNode.classList.add('closed');
-  localStorage.setItem('seencookies', '1');
+  sessionStorage.setItem('seencookies', '1');
 });

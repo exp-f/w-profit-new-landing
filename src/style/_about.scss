@@ -144,10 +144,17 @@
       &__title {
         font-size: 18px;
         margin-bottom: 35px;
+        transition: $transition-common;
+        cursor: pointer;
+        &:hover {
+          color: #167fff;
+        }
       }
 
       &__img {
         margin-bottom: 10px;
+        width: 37px;
+        height: auto;
       }
 
       &__items {

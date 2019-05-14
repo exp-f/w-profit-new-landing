@@ -128,7 +128,7 @@ document.querySelectorAll('.popup__close').forEach(function (item) {
 
 document.querySelector('.cookies__close').addEventListener('click', function (e) {
   e.target.parentNode.parentNode.classList.add('closed');
-  localStorage.setItem('seencookies', '1');
+  sessionStorage.setItem('seencookies', '1');
 });
 
 /***/ })
