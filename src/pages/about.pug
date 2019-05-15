@@ -1,7 +1,7 @@
 extends ../layout/base.pug
 block config
-    - var title = 'Platform'
-    - var page = 'platform'
+    - var title = "Platform"
+    - var page = "platform"
 block content
     .about.about_1
         .wrapper
@@ -33,8 +33,9 @@ block content
                 .about_3__item
                     video.about_3__img(src=require("../media/pokerup_encoded.mp4") muted loop autoplay playsinline)
                     .about_3__texts
-                        img.about_3__texts__img(src=require("../images/testimonials-icon-1.png"))
-                        h2.about_3__texts__title PokerUp: online poker
+                        a(href="https://itunes.apple.com/us/app/pokerup.-free-online-poker/id1182383163?l=ru&ls=1&mt=8" target="_blank")
+                            img.about_3__texts__img(src=require("../images/testimonials-icon-1.png"))
+                            h2.about_3__texts__title PokerUp: online poker
                         .about_3__texts__items
                             .about_3__texts__item
                                 span CTR
@@ -45,8 +46,9 @@ block content
                 .about_3__item
                     video.about_3__img(src=require("../media/aviasales_encoded.mp4") muted loop autoplay playsinline)
                     .about_3__texts
-                        img.about_3__texts__img(src=require("../images/testimonials-icon-2.png"))
-                        h2.about_3__texts__title Aviasales
+                        a(href="https://itunes.apple.com/RU/app/id498958864?mt=8" target="_blank")
+                            img.about_3__texts__img(src=require("../images/testimonials-icon-2.png"))
+                            h2.about_3__texts__title Aviasales
                         .about_3__texts__items
                             .about_3__texts__item
                                 span CTR

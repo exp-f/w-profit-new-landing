@@ -33,6 +33,14 @@
         padding-top: 80px;
         padding-bottom: 80px;
         overflow: auto; } }
+  .wrapper--gdpr {
+    overflow-y: scroll;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .wrapper--head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1050,9 +1058,12 @@ nobr {
           .about_3__item:nth-child(2n) > video, .about_3__item:nth-child(2n) > img {
             margin-left: 0;
             max-width: 50%; } }
+  .about_3__texts a {
+    text-decoration: none; }
   .about_3__texts__title {
     font-size: 18px;
     margin-bottom: 35px;
+    color: #000000;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -1061,7 +1072,7 @@ nobr {
       color: #167fff; }
   .about_3__texts__img {
     margin-bottom: 10px;
-    width: 37px;
+    width: 50px;
     height: auto; }
   .about_3__texts__items {
     display: -webkit-box;
@@ -1105,6 +1116,22 @@ nobr {
   opacity: 0;
   visibility: hidden;
   pointer-events: none; }
+  .popup#gdpr {
+    z-index: 3; }
+  .popup__content--gdpr {
+    color: #ffffff;
+    line-height: 1.5;
+    padding: 100px 0; }
+    .popup__content--gdpr h1 {
+      margin-bottom: 15px; }
+    .popup__content--gdpr p {
+      margin-bottom: 10px; }
+    .popup__content--gdpr a {
+      color: inherit; }
+    .popup__content--gdpr table {
+      margin-bottom: 20px; }
+      .popup__content--gdpr table tr td:first-child {
+        font-weight: bold; }
   .popup.open {
     opacity: 1;
     visibility: visible;

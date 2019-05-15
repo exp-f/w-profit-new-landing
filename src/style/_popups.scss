@@ -10,6 +10,33 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  &#gdpr {
+    z-index: 3;
+  }
+  &__content {
+    &--gdpr {
+      color: #ffffff;
+      line-height: 1.5;
+      padding: 100px 0;
+      h1 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      a {
+        color: inherit;
+      }
+      table {
+        margin-bottom: 20px;
+        tr {
+          td:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
   &.open {
     opacity: 1;
     visibility: visible;

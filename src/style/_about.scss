@@ -141,9 +141,13 @@
     }
 
     &__texts {
+      a {
+        text-decoration: none;
+      }
       &__title {
         font-size: 18px;
         margin-bottom: 35px;
+        color: #000000;
         transition: $transition-common;
         cursor: pointer;
         &:hover {
@@ -153,7 +157,7 @@
 
       &__img {
         margin-bottom: 10px;
-        width: 37px;
+        width: 50px;
         height: auto;
       }
 

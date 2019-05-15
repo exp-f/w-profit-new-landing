@@ -25,6 +25,12 @@
                     .popup__input_wrapper
                         input(name="portfolio_link" required value="")
                         .popup__input_label Portfolio link
+            .popup__checkboxs
+                label.popup__checkbox
+                    input(name="agreed" type='checkbox' required)
+                    i
+                    p I accept the
+                        a(href='#' data-target='gdpr') GDPR
             .popup__buttons
                 input(type="submit" value="Sign up").btn.btn--red.btn--large
             p.popup__label Please make sure to fill out all these fields.

@@ -26,6 +26,11 @@
       overflow: auto;
     }
   }
+  &--gdpr {
+    overflow-y: scroll;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   &--head {
     display: flex;
     justify-content: space-between;
