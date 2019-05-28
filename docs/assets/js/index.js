@@ -81,6 +81,7 @@
 
 __webpack_require__(0);
 
+var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 document.querySelector('.header__menu_button').addEventListener('click', function (e) {
   var header = document.querySelector('.header');
   header.classList.toggle('open');
@@ -129,6 +130,67 @@ document.querySelectorAll('.popup__close').forEach(function (item) {
 document.querySelector('.cookies__close').addEventListener('click', function (e) {
   e.target.parentNode.parentNode.classList.add('closed');
   sessionStorage.setItem('seencookies', '1');
+});
+
+document.querySelector('#request-demo form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var target = e.currentTarget;
+  var inputs = target.querySelectorAll('input:not([type="submit"]), textarea');
+  var body = new FormData();
+  var errorsOn = [];
+  var hasErrors = false;
+  inputs.forEach(function (i) {
+    switch (i.name) {
+      case 'first_name':
+      case 'last_name':
+      case 'company_name':
+      case 'industry_country':
+      case 'comment':
+      case 'budget':
+        if (!!i.value) {
+          body.append(i.name, i.value);
+        } else {
+          hasErrors = true;
+          errorsOn.push(i.name);
+        }
+        break;
+      case 'agreed':
+        if (!i.checked) {
+          hasErrors = true;
+          errorsOn.push(i.name);
+        }
+        break;
+      case 'email':
+        if (!emailRegex.test(i.value)) {
+          hasErrors = true;
+          errorsOn.push(i.name);
+        } else {
+          body.append(i.name, i.value);
+        }
+    }
+  });
+  if (hasErrors) {
+    errorsOn.forEach(function (i) {
+      var errorContainer = target.querySelector('[name=\'' + i + '\'').parentElement;
+      errorContainer.classList.toggle('error', true);
+      setTimeout(function () {
+        errorContainer.classList.remove('error');
+      }, 3000);
+    });
+    return false;
+  } else {
+    fetch('https://w-profit.com/sendmail.php', {
+      method: 'POST',
+      body: body
+    }).then(function (r) {
+      return r.text();
+    }).then(function (r) {
+      document.getElementById('request-demo').classList.remove('open');
+      document.getElementById('msg').classList.add('open');
+    }).catch(function (e) {
+      console.error(e);
+    });
+  }
 });
 
 /***/ })

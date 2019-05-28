@@ -1117,6 +1117,11 @@ nobr {
   opacity: 0;
   visibility: hidden;
   pointer-events: none; }
+  .popup--sended {
+    top: calc(50% - 75px);
+    bottom: calc(50% - 75px);
+    left: calc(50% - 150px);
+    right: calc(50% - 150px); }
   .popup#gdpr {
     z-index: 3; }
   .popup__content--gdpr {
@@ -1133,6 +1138,9 @@ nobr {
       margin-bottom: 20px; }
       .popup__content--gdpr table tr td:first-child {
         font-weight: bold; }
+  .popup__content--msg h1 {
+    color: #ffffff;
+    font-size: 24px; }
   .popup.open {
     opacity: 1;
     visibility: visible;
@@ -1150,6 +1158,8 @@ nobr {
     width: 22px;
     height: 22px;
     cursor: pointer; }
+  .popup--sended .popup__close {
+    top: 10px; }
   .popup__title {
     color: #ffffff;
     margin-bottom: 65px; }
@@ -1217,6 +1227,8 @@ nobr {
         color: #000000; }
       .popup__input_wrapper input.invalid {
         border-color: #ff0056; }
+    .popup__input_wrapper.error input {
+      border-color: red; }
   .popup__textarea_wrapper {
     position: relative;
     width: 100%; }
@@ -1237,6 +1249,8 @@ nobr {
         color: #000000; }
       .popup__textarea_wrapper textarea.invalid {
         border-color: #ff0056; }
+    .popup__textarea_wrapper.error textarea {
+      border-color: red; }
   .popup__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1274,7 +1288,10 @@ nobr {
             align-items: center;
     cursor: pointer; }
     .popup__checkbox input {
-      display: none; }
+      opacity: 0;
+      width: 0;
+      height: 0;
+      visibility: hidden; }
       .popup__checkbox input + i {
         width: 13px;
         height: 13px;
@@ -1286,11 +1303,15 @@ nobr {
         transition: all 0.2s ease;
         cursor: pointer;
         margin-right: 20px; }
+        .error .popup__checkbox input + i {
+          border-color: red; }
         .popup__checkbox input + i:hover {
           border-color: #0c217d; }
       .popup__checkbox input:checked + i {
         background-color: #0c217d;
         border-color: #0c217d; }
+    .popup__checkbox.error input + i {
+      border-color: red; }
     .popup__checkbox p {
       font-size: 14px;
       color: #ffffff; }

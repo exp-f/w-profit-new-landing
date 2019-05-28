@@ -33,6 +33,13 @@ module.exports = function () {
           }
         },
         {
+          test: /\.php$/i,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        },
+        {
           test: /\.(ttf|otf|eot|woff|woff2)$/i,
           loader: 'file-loader',
           options: {
