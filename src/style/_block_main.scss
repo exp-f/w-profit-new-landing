@@ -21,7 +21,7 @@
     background: #ffffff;
     border-radius: 55px;
     @media (max-width: $mobile-bp) {
-
+      background: transparent;
     }
   }
   &__logo {
@@ -45,7 +45,7 @@
     }
     @media (max-width: $mobile-bp) {
       flex-direction: column;
-      background-color: transparent;
+      background: transparent;
     }
   }
   &__title {

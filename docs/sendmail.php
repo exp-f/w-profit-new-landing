@@ -35,7 +35,7 @@ try {
     echo $mailer->Password;
     //Recipients
     $mailer->setFrom('noreply@w-profit.com', 'Noreply Noreply');
-    $mailer->addAddress('mitay93@gmail.com');
+    $mailer->addAddress('hello@w-profit.com');
     // Content
     $mailer->isHTML(true);
     $mailer->Subject = 'Новый запрос демо';

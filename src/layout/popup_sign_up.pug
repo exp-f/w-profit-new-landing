@@ -5,24 +5,24 @@
             h1.title.popup__title Sign up now
             .popup__form
                 .popup__row
-                    .popup__input_wrapper
+                    label.popup__input_wrapper
                         input(name="first_name" required value="")
                         .popup__input_label First Name
-                    .popup__input_wrapper
+                    label.popup__input_wrapper
                         input(name="last_name" required value="")
                         .popup__input_label Last Name
                 .popup__row
-                    .popup__input_wrapper
+                    label.popup__input_wrapper
                         input(name="email" required value="")
                         .popup__input_label Email
-                    .popup__input_wrapper
+                    label.popup__input_wrapper
                         input(name="years" required value="")
                         .popup__input_label Experience years
                 .popup__row
-                    .popup__input_wrapper
+                    label.popup__input_wrapper
                         input(name="company_name" required value="")
                         .popup__input_label Company Name
-                    .popup__input_wrapper
+                    label.popup__input_wrapper
                         input(name="portfolio_link" required value="")
                         .popup__input_label Portfolio link
             .popup__checkboxs
@@ -30,7 +30,7 @@
                     input(name="agreed" type='checkbox' required)
                     i
                     p I accept the
-                        a(href='#' data-target='gdpr') GDPR
+                        a(href='#' ) GDPR
             .popup__buttons
                 input(type="submit" value="Sign up").btn.btn--red.btn--large
             p.popup__label Please make sure to fill out all these fields.

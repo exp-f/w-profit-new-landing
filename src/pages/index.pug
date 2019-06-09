@@ -5,7 +5,9 @@ block config
 block content
     section.backgrounds.backgrounds--start
         .background__wrapper
-            img(src=require('../images/block-1-bg.svg')).background.background_1
+            img(src=require('../images/block-1-bg.svg')).background.background_1.background--desk
+            img(src=require('../images/block-1-bg-mobile.svg')).background.background_1.background--mobile
+            img(src=require('../images/block-1-bg-tablet.svg')).background.background_1.background--tablet
     section.block.block_1
         .wrapper
             img(src=require('../images/w_logo_color.svg') width=249 height=67).block_1__logo

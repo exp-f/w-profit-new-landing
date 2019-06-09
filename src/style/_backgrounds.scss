@@ -34,18 +34,8 @@
       left: 0;
       right: 0;
       z-index: -1;
-      @media (max-width: $tablet-bp) {
-        transform: rotate(-45deg);
-        top: 150px;
-        max-width: initial;
-        width: 140%;
-        left: -175px;
-      }
       @media (max-width: $mobile-bp) {
-        top: 700px;
-        width: 100%;
-        left: 0;
-        transform: none;
+        top: 585px;
       }
     }
 
