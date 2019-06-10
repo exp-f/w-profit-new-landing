@@ -34,6 +34,9 @@
       left: 0;
       right: 0;
       z-index: -1;
+      @media (max-width: $tablet-bp) {
+          width: 100%;
+      }
       @media (max-width: $mobile-bp) {
         top: 585px;
       }

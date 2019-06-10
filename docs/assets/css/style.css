@@ -332,6 +332,9 @@ nobr {
   left: 0;
   right: 0;
   z-index: -1; }
+  @media (max-width: 1024px) {
+    .backgrounds .background_1 {
+      width: 100%; } }
   @media (max-width: 480px) {
     .backgrounds .background_1 {
       top: 585px; } }
