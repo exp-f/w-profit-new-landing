@@ -8,11 +8,14 @@
       @media (max-width: $tablet-bp) {
         display: none;
       }
+      @media (orientation: landscape) {
+        display: block;
+      }
     }
 
     &--tablet {
       display: none;
-      @media (max-width: $tablet-bp) {
+      @media (max-width: $tablet-bp) and (orientation: portrait) {
         display: block;
       }
       @media (max-width: $mobile-bp) {

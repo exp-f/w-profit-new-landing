@@ -310,9 +310,13 @@ nobr {
   .backgrounds .background--desk {
     display: none; } }
 
+@media (orientation: landscape) {
+  .backgrounds .background--desk {
+    display: block; } }
+
 .backgrounds .background--tablet {
   display: none; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (orientation: portrait) {
     .backgrounds .background--tablet {
       display: block; } }
   @media (max-width: 480px) {
