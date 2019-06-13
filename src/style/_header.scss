@@ -29,6 +29,9 @@
           transform: translateY(0);
         }
       }
+      @media (orientation: landscape) {
+        transform: translateY(-100vh);
+      }
       & > * {
         @media (max-width: $tablet-bp) {
           margin-right: 0 !important;
