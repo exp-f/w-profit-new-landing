@@ -401,12 +401,12 @@ nobr {
     margin-bottom: 110px; }
     @media (max-width: 1024px) {
       .block_1__logo {
-        margin-bottom: 90px; } }
+        margin-bottom: 0;
+        background: #ffffff; } }
     @media (max-width: 480px) {
       .block_1__logo {
         max-width: 220px;
-        height: auto;
-        margin-bottom: 50px; } }
+        height: auto; } }
   .block_1__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -434,10 +434,12 @@ nobr {
       .block_1__title {
         font-size: 1.72rem;
         margin-bottom: 0;
+        padding-top: 90px;
         padding-bottom: 100px;
         background: #ffffff; } }
     @media (max-width: 480px) {
       .block_1__title {
+        padding-top: 50px;
         padding-bottom: 60px; } }
   .block_1__item {
     text-align: center;

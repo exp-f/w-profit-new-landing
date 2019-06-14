@@ -27,12 +27,12 @@
   &__logo {
     margin-bottom: 110px;
     @media (max-width: $tablet-bp) {
-      margin-bottom: 90px;
+      margin-bottom: 0;
+      background: #ffffff;
     }
     @media (max-width: $mobile-bp) {
       max-width: 220px;
       height: auto;
-      margin-bottom: 50px;
     }
   }
   &__items {
@@ -53,10 +53,12 @@
     @media (max-width: $tablet-bp) {
       font-size: 1.72rem;
       margin-bottom: 0;
+      padding-top: 90px;
       padding-bottom: 100px;
       background: $white;
     }
     @media (max-width: $mobile-bp) {
+      padding-top: 50px;
       padding-bottom: 60px;
     }
   }
