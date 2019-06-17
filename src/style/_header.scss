@@ -29,7 +29,7 @@
           transform: translateY(0);
         }
       }
-      @media (orientation: landscape) {
+      @media (max-width: $tablet-bp) and (orientation: landscape) {
         transform: translateY(-100vh);
       }
       & > * {
