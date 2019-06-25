@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FF0056;}
-	.st1{fill:#1781FF;}
-</style>
-<rect x="-116.7" y="539" transform="matrix(0.8913 -0.4535 0.4535 0.8913 -140.2671 493.9745)" class="st0" width="2153.4" height="1"/>
-<rect x="-113.3" y="546.5" transform="matrix(0.8944 -0.4472 0.4472 0.8944 -143.2759 487.0734)" class="st1" width="2146.6" height="1"/>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M1919.48 50.7417L0.154663 1027.31L0.608163 1028.2L1919.93 51.633L1919.48 50.7417Z" fill="#FF0056"/>
+<path d="M1919.7 66.5712L-0.216614 1026.53L0.230586 1027.43L1920.15 67.4656L1919.7 66.5712Z" fill="#1781FF"/>
+<path d="M243 174H1632V964H243V174Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+</defs>
 </svg>
